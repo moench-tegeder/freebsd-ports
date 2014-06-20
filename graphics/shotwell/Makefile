@@ -1,9 +1,8 @@
 # Created by: Mario Sergio Fujikawa Ferreira <lioux@FreeBSD.org> et al.
-# $FreeBSD$
+# $FreeBSD: head/graphics/shotwell/Makefile 354949 2014-05-23 17:18:56Z lx $
 
 PORTNAME=	shotwell
-PORTVERSION=	0.15.1
-PORTREVISION=	2
+PORTVERSION=	0.18.0
 CATEGORIES=	graphics gnome
 MASTER_SITES=	GNOME/sources/shotwell/${PORTVERSION:R}
 
@@ -27,7 +26,7 @@ LIB_DEPENDS=	libdbus-glib-1.so:${PORTSDIR}/devel/dbus-glib \
 		librest-0.7.so:${PORTSDIR}/devel/librest
 
 USES=		shebangfix gettext desktop-file-utils gmake pkgconfig tar:xz
-USE_GNOME=	gnomehier gconf2 gtk20 librsvg2
+USE_GNOME=	gnomehier gconf2 gtk20 gnomedocutils librsvg2
 USE_SQLITE=	3
 USE_GSTREAMER1=	yes
 HAS_CONFIGURE=	yes
